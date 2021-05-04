@@ -22,8 +22,10 @@ ui <- fixedPage(
                        "Number of bins:",
                        min = 1,
                        max = 50,
-                       value = 30, width = "80%")
+                       value = 30, width = "80%"),
+           
     ),
+    tags$img(src="Epi_Logo_HZ_Outline_RGB.svg"),
     
     # Show a plot of the generated distribution
     column(6,
@@ -36,13 +38,14 @@ ui <- fixedPage(
                       plotOutput("distPlot2")
              )
            ),
-           #HTML()
+           tags$div(
+             "<strong>Raw HTML!</strong>"
+           ),
            #plotOutput("distPlot"), 
            tags$ul(
              tags$li(tags$strong("Strong")),
              tags$li("second item"))
-    ),
-    tags$img(src="Epi_Logo_HZ_Outline_RGB.svg")
+    )
   )
 )
 

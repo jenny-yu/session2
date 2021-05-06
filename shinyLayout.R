@@ -1,12 +1,5 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
 
+<<<<<<< HEAD
 library(shiny)
 
 # Define UI for application that draws a histogram
@@ -130,3 +123,5 @@ shinyApp(ui = ui, server = server)
 =======
 shinyApp(ui = ui, server = server)
 >>>>>>> 6533ee4697a34da182f926025e2eb3f2c2ca3923
+=======
+>>>>>>> cb008807bb992314d97ddf7075b0c660758be792

@@ -30,8 +30,7 @@ ui <- fixedPage(
   ),  
   
   br(),
-=======
->>>>>>> 6533ee4697a34da182f926025e2eb3f2c2ca3923
+
   # Application title
   titlePanel(tags$i("Old Faithful Geyser Data")),
   
@@ -58,7 +57,7 @@ ui <- fixedPage(
   )
 )
 ################
-=======
+
   fluidRow(
     column(6,
            sliderInput("bins",
@@ -66,7 +65,6 @@ ui <- fixedPage(
                        min = 1,
                        max = 50,
                        value = 30, width = "80%"),
-           
     ),
     tags$img(src="Epi_Logo_HZ_Outline_RGB.svg"),
     
@@ -90,10 +88,6 @@ ui <- fixedPage(
              tags$li("second item"))
     )
   )
-)
-
->>>>>>> 6533ee4697a34da182f926025e2eb3f2c2ca3923
-library(shiny)
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
@@ -118,10 +112,6 @@ server <- function(input, output) {
 }
 
 # Run the application 
-<<<<<<< HEAD
+
 shinyApp(ui = ui, server = server)
-=======
-shinyApp(ui = ui, server = server)
->>>>>>> 6533ee4697a34da182f926025e2eb3f2c2ca3923
-=======
->>>>>>> cb008807bb992314d97ddf7075b0c660758be792
+

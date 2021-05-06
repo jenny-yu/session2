@@ -30,7 +30,22 @@ ui <- fixedPage(
                             style="font-weight: bold"), align ="center"))
     #column(4, a(href="http://cver.upei.ca/epi-on-the-island-2021/"))
   ),  
-
+  br(),
+  #ensure the columns are vertically stacked
+  fluidRow(
+    column(12,style="background-color: Coral;",
+           p("the first 4 columns, my name:", 
+             span("Jenny Yu",style="font-weight: bold"), align ="center"))),
+  br(),
+  fluidRow(    
+    column(12,style="background-color: Aqua;",
+           p("the second 4 columns, my email:",
+             span("jennyyu@upei.ca",style="font-weight: bold"), align ="center"))),
+  br(),
+  fluidRow(
+    column(12,style="background-color: LawnGreen;", 
+           p("my web:",span("http://cver.upei.ca/epi-on-the-island-2021/",
+                            style="font-weight: bold"), align ="center")))
   
   )
 
